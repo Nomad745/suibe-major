@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海对外经贸大学专业介绍与发展指南</title>
+    <meta name="description" content="上海对外经贸大学专业介绍网站，涵盖金融管理学院、国际经贸学院、统计与信息学院的所有专业详细信息">
+    <meta name="keywords" content="上海对外经贸大学,SUIBE,专业介绍,金融学,经济学,统计学,人工智能">
+    
+    <!-- 外部资源 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 本地样式 -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    
+    <style>
+        /* 首页特定样式 */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(227, 25, 55, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%);
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23E31937" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .college-overview {
+            background: linear-gradient(45deg, #1f2937 0%, #111827 100%);
+        }
+        
+        .major-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .stats-section {
+            background: radial-gradient(circle at center, rgba(227, 25, 55, 0.1) 0%, transparent 70%);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 50vh;
+                padding: 2rem 1rem;
+            }
+            
+            .major-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-university text-2xl tesla-red"></i>
+                    <span class="text-xl font-bold">SUIBE</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#colleges" class="nav-link">学院概览</a>
+                    <a href="#majors" class="nav-link">专业介绍</a>
+                    <a href="#features" class="nav-link">办学特色</a>
+                    <a href="#contact" class="nav-link">联系我们</a>
+                </div>
+                <button class="md:hidden nav-toggle">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="pt-20">
+        <!-- 英雄区域 -->
+        <section class="hero-section">
+            <div class="max-w-4xl mx-auto px-6 relative z-10">
+                <h1 class="title-huge tesla-red mb-6 font-black">上海对外经贸大学</h1>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-100">金融相关专业介绍&发展指南</h2>
+                <p class="text-medium-en text-gray-400 tracking-wider mb-8">SUIBE ACADEMIC PROGRAMS COMPREHENSIVE GUIDE</p>
+                <div class="w-32 h-1 bg-tesla-red mx-auto mb-8 rounded-full"></div>
+                <p class="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
+                    探索上海对外经贸大学三大学院的金融相关专业，为您的学术发展和职业规划提供全面指导
+                </p>
+            </div>
+        </section>
+
+        <!-- 学院概览 -->
+        <section id="colleges" class="py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">
+                        <i class="fas fa-building tesla-red mr-4"></i>
+                        学院概览
+                    </h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        三大学院，十一个金融相关专业，为您提供多元化的学术选择和发展机会
+                    </p>
+                </div>
+
+                <div class="grid-bento mb-12">
+                    <!-- 金融管理学院 - 大卡片 -->
+                    <div class="span-8 college-overview rounded-2xl p-8 card-hover border border-gray-800 line-graphic">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-chart-line text-3xl tesla-red mr-4"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold">金融管理学院</h3>
+                                <p class="text-small-en mt-1">SCHOOL OF FINANCE AND MANAGEMENT</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                            <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                                <h4 class="font-bold tesla-red mb-2">金融学</h4>
+                                <p class="text-xs text-gray-300">传统金融理论与实务</p>
+                            </div>
+                            <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                                <h4 class="font-bold tesla-red mb-2">金融学（中加合作）</h4>
+                                <p class="text-xs text-gray-300">国际化金融教育</p>
+                            </div>
+                            <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                                <h4 class="font-bold tesla-red mb-2">金融工程</h4>
+                                <p class="text-xs text-gray-300">量化金融与风险管理</p>
+                            </div>
+                            <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                                <h4 class="font-bold tesla-red mb-2">投资学</h4>
+                                <p class="text-xs text-gray-300">投资分析与资产管理</p>
+                            </div>
+                            <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                                <h4 class="font-bold tesla-red mb-2">保险学</h4>
+                                <p class="text-xs text-gray-300">风险管理与保险实务</p>
+                            </div>
+                            <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                                <h4 class="font-bold tesla-red mb-2">资产评估</h4>
+                                <p class="text-xs text-gray-300">资产价值评估与管理</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm">
+                            以金融理论为基础，注重实践应用，培养具备国际视野的金融专业人才
+                        </p>
+                    </div>
+
+                    <!-- 国际经贸学院 -->
+                    <div class="span-4 bg-gray-900 rounded-2xl p-6 card-hover border border-gray-800">
+                        <div class="text-center">
+                            <i class="fas fa-globe text-4xl tesla-red mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">国际经贸学院</h3>
+                            <p class="text-small-en mb-4">SCHOOL OF INTERNATIONAL ECONOMICS & TRADE</p>
+                            <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red mb-4">
+                                <h4 class="font-bold tesla-red mb-2">经济学</h4>
+                                <p class="text-xs text-gray-300">国际经济理论与政策</p>
+                            </div>
+                            <p class="text-sm text-gray-300">
+                                专注国际经济理论研究与政策分析
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 统计与信息学院 -->
+                <div class="bg-gray-900 rounded-2xl p-8 card-hover border border-gray-800 mb-12">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-chart-bar text-3xl tesla-red mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold">统计与信息学院</h3>
+                            <p class="text-small-en mt-1">SCHOOL OF STATISTICS AND INFORMATION</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                            <h4 class="font-bold tesla-red mb-2">应用统计学</h4>
+                            <p class="text-xs text-gray-300">数据分析与统计建模</p>
+                        </div>
+                        <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                            <h4 class="font-bold tesla-red mb-2">经济统计学</h4>
+                            <p class="text-xs text-gray-300">经济数据分析与预测</p>
+                        </div>
+                        <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                            <h4 class="font-bold tesla-red mb-2">大数据管理与应用</h4>
+                            <p class="text-xs text-gray-300">大数据技术与商业应用</p>
+                        </div>
+                        <div class="bg-tesla-red-dark rounded-lg p-4 border border-tesla-red">
+                            <h4 class="font-bold tesla-red mb-2">人工智能</h4>
+                            <p class="text-xs text-gray-300">AI技术与智能系统</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mt-6">
+                        融合统计学理论与现代信息技术，培养数据科学与人工智能领域的专业人才
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 专业导航 -->
+        <section id="majors" class="py-16 px-6 bg-gray-900/50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">
+                        <i class="fas fa-graduation-cap tesla-red mr-4"></i>
+                        专业导航
+                    </h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        点击下方专业卡片，深入了解各专业的详细信息、课程体系和职业发展路径
+                    </p>
+                </div>
+
+                <div class="major-grid">
+                    <!-- 金融管理学院专业 -->
+                    <div class="major-card" data-link="finance/finance.html">
+                        <div class="college-badge">金融管理学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3 class="major-title">金融学</h3>
+                        <p class="major-subtitle">Finance</p>
+                        <p class="major-description">
+                            系统学习金融理论与实务，培养具备扎实金融基础知识和实践能力的专业人才
+                        </p>
+                    </div>
+
+                    <div class="major-card" data-link="finance/finance-canada.html">
+                        <div class="college-badge">金融管理学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3 class="major-title">金融学（中加合作）</h3>
+                        <p class="major-subtitle">Finance (China-Canada Cooperation)</p>
+                        <p class="major-description">
+                            国际化办学模式，融合中加两国金融教育优势，培养国际化金融人才
+                        </p>
+                    </div>
+
+                    <div class="major-card" data-link="finance/financial-engineering.html">
+                        <div class="college-badge">金融管理学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3 class="major-title">金融工程</h3>
+                        <p class="major-subtitle">Financial Engineering</p>
+                        <p class="major-description">
+                            运用数学、统计学和计算机技术解决金融问题，培养量化金融专业人才
+                        </p>
+                    </div>
+
+                    <div class="major-card" data-link="finance/investment.html">
+                        <div class="college-badge">金融管理学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="major-title">投资学</h3>
+                        <p class="major-subtitle">Investment</p>
+                        <p class="major-description">
+                            专注投资理论与实践，培养具备投资分析和资产管理能力的专业人才
+                        </p>
+                    </div>
+
+                    <div class="major-card" data-link="finance/insurance.html">
+                        <div class="college-badge">金融管理学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="major-title">保险学</h3>
+                        <p class="major-subtitle">Insurance</p>
+                        <p class="major-description">
+                            系统学习保险理论与实务，培养风险管理和保险经营管理专业人才
+                        </p>
+                    </div>
+
+                    <div class="major-card" data-link="finance/asset-valuation.html">
+                        <div class="college-badge">金融管理学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="major-title">资产评估</h3>
+                        <p class="major-subtitle">Asset Valuation</p>
+                        <p class="major-description">
+                            培养具备资产评估理论知识和实践技能的专业评估人才
+                        </p>
+                    </div>
+
+                    <!-- 国际经贸学院专业 -->
+                    <div class="major-card" data-link="economics/economics.html">
+                        <div class="college-badge">国际经贸学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="major-title">经济学</h3>
+                        <p class="major-subtitle">Economics</p>
+                        <p class="major-description">
+                            系统学习经济学理论，重点关注国际经济与贸易，培养经济分析专业人才
+                        </p>
+                    </div>
+
+                    <!-- 统计与信息学院专业 -->
+                    <div class="major-card" data-link="statistics/applied-statistics.html">
+                        <div class="college-badge">统计与信息学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="major-title">应用统计学</h3>
+                        <p class="major-subtitle">Applied Statistics</p>
+                        <p class="major-description">
+                            运用统计方法解决实际问题，培养数据分析和统计建模专业人才
+                        </p>
+                    </div>
+
+                    <div class="major-card" data-link="statistics/economic-statistics.html">
+                        <div class="college-badge">统计与信息学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3 class="major-title">经济统计学</h3>
+                        <p class="major-subtitle">Economic Statistics</p>
+                        <p class="major-description">
+                            专注经济数据的收集、整理和分析，培养经济统计分析专业人才
+                        </p>
+                    </div>
+
+                    <div class="major-card" data-link="statistics/big-data.html">
+                        <div class="college-badge">统计与信息学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="major-title">大数据管理与应用</h3>
+                        <p class="major-subtitle">Big Data Management and Application</p>
+                        <p class="major-description">
+                            掌握大数据技术和应用方法，培养大数据分析和管理专业人才
+                        </p>
+                    </div>
+
+                    <div class="major-card" data-link="statistics/artificial-intelligence.html">
+                        <div class="college-badge">统计与信息学院</div>
+                        <div class="major-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="major-title">人工智能</h3>
+                        <p class="major-subtitle">Artificial Intelligence</p>
+                        <p class="major-description">
+                            学习AI核心技术和应用，培养人工智能系统设计与开发专业人才
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 办学特色 -->
+        <section id="features" class="py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">
+                        <i class="fas fa-star tesla-red mr-4"></i>
+                        办学特色
+                    </h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        上海对外经贸大学以国际化、应用型、高水平为办学特色
+                    </p>
+                </div>
+
+                <div class="grid-bento">
+                    <div class="span-6 bg-gray-900 rounded-2xl p-8 card-hover border border-gray-800">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-globe-asia text-3xl tesla-red mr-4"></i>
+                            <h3 class="text-2xl font-bold">国际化办学</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-tesla-red rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <p class="text-gray-300">与多个国家和地区的知名大学建立合作关系</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-tesla-red rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <p class="text-gray-300">开设中外合作办学项目，培养国际化人才</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-tesla-red rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <p class="text-gray-300">提供丰富的海外交流学习机会</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span-6 bg-gray-900 rounded-2xl p-8 card-hover border border-gray-800">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-handshake text-3xl tesla-red mr-4"></i>
+                            <h3 class="text-2xl font-bold">产学研结合</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-tesla-red rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <p class="text-gray-300">与知名企业建立深度合作关系</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-tesla-red rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <p class="text-gray-300">提供丰富的实习实践机会</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-tesla-red rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <p class="text-gray-300">注重理论与实践相结合的教学模式</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer id="contact" class="bg-gray-900 py-12 px-6 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto text-center">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-4">
+                        <span class="tesla-red">选择SUIBE</span> · 成就未来
+                    </h3>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        上海对外经贸大学专业介绍网站，为您的学术发展和职业规划提供全面指导
+                    </p>
+                </div>
+
+                <div class="flex justify-center items-center space-x-8 text-sm mb-8">
+                    <div class="flex items-center">
+                        <i class="fas fa-university tesla-red mr-2"></i>
+                        <span>专业教育</span>
+                    </div>
+                    <div class="w-2 h-2 bg-tesla-red rounded-full"></div>
+                    <div class="flex items-center">
+                        <i class="fas fa-globe tesla-red mr-2"></i>
+                        <span>国际视野</span>
+                    </div>
+                    <div class="w-2 h-2 bg-tesla-red rounded-full"></div>
+                    <div class="flex items-center">
+                        <i class="fas fa-rocket tesla-red mr-2"></i>
+                        <span>未来发展</span>
+                    </div>
+                </div>
+
+                <div class="text-sm text-gray-500">
+                    <p>&copy; 上海对外经贸大学专业介绍网站 | SUIBE Academic Programs Guide</p>
+                    <p class="mt-2">Shanghai University of International Business and Economics</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- 脚本文件 -->
+    <script src="assets/js/common.js"></script>
+</body>
+</html>

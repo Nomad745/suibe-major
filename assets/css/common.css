@@ -1,0 +1,294 @@
+/* 上海对外经贸大学专业介绍网站 - 公共样式 */
+
+:root {
+    --tesla-red: #E31937;
+}
+
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* 核心颜色类 */
+.tesla-red {
+    color: #E31937 !important;
+}
+
+.bg-tesla-red {
+    background-color: #E31937 !important;
+}
+
+.border-tesla-red {
+    border-color: #E31937 !important;
+}
+
+.bg-tesla-red-dark {
+    background-color: rgba(227, 25, 55, 0.2) !important;
+}
+
+/* 字体层次 */
+.title-huge {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.subtitle-large {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.number-big {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.text-small-en {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.text-medium-en {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.text-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #d1d5db;
+}
+
+.text-caption {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #9ca3af;
+}
+
+/* 布局网格 */
+.grid-bento {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+}
+
+.span-6 { grid-column: span 6; }
+.span-4 { grid-column: span 4; }
+.span-3 { grid-column: span 3; }
+.span-8 { grid-column: span 8; }
+.span-12 { grid-column: span 12; }
+
+/* 卡片效果 */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(227, 25, 55, 0.3);
+}
+
+/* 装饰线条 */
+.line-graphic {
+    position: relative;
+}
+
+.line-graphic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #E31937, transparent);
+}
+
+/* 计数器样式 */
+.counter {
+    font-family: 'Courier New', monospace;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .span-6, .span-4, .span-3, .span-8 { 
+        grid-column: span 12; 
+    }
+    
+    .title-huge { 
+        font-size: 2.5rem; 
+        line-height: 1.2;
+    }
+    
+    .number-big { 
+        font-size: 3rem; 
+        line-height: 1;
+    }
+    
+    .text-description {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    
+    .text-small-en {
+        font-size: 0.7rem;
+    }
+    
+    .grid-bento {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-huge { 
+        font-size: 2rem; 
+    }
+    
+    .number-big { 
+        font-size: 2.5rem; 
+    }
+    
+    .text-description {
+        font-size: 0.75rem;
+    }
+}
+
+/* 专业卡片样式 */
+.major-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.major-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(227, 25, 55, 0.3);
+    border-color: #E31937;
+}
+
+.major-card .major-icon {
+    font-size: 2.5rem;
+    color: #E31937;
+    margin-bottom: 1rem;
+}
+
+.major-card .major-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.major-card .major-subtitle {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-bottom: 1rem;
+}
+
+.major-card .major-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #d1d5db;
+}
+
+/* 学院标识 */
+.college-badge {
+    display: inline-block;
+    background: rgba(227, 25, 55, 0.2);
+    color: #E31937;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* 导航链接 */
+.nav-link {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #E31937;
+}
+
+/* 按钮样式 */
+.btn-primary {
+    background-color: #E31937;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c41230;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(227, 25, 55, 0.3);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #E31937;
+    border: 2px solid #E31937;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #E31937;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E31937;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c41230;
+}
